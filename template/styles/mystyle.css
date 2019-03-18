@@ -3,9 +3,23 @@ h1 {
 	text-align: center;
 }
 
-.label {
+#label {
 	font-size :30px;
 	margin:20px;
+}
+
+/*add background for each time zone here!*/
+#label.amsterdamLable {
+
+}
+
+#lable.longonLable {
+
+}
+
+
+#lable.tokyoLable {
+
 }
 
 .time p {
@@ -14,6 +28,10 @@ h1 {
 
 .date p {
 	font-size :80px;
+}
+
+.button {
+	margin:auto;
 }
 
 p {
