@@ -6,23 +6,29 @@
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 		<script src="scripts/main.js" defer></script>
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
 	</head>
 	<body>
 		<section id = "pageTitle">
 			<div class = "contentWrap">
-				<h1>Space Clock</h1>
+				<ul>
+					<li>S</li>
+					<li>P</li>
+					<li>A</li>
+					<li>C</li>
+					<li>E</li>
+					<li>C</li>
+					<li>L</li>
+					<li>O</li>
+					<li>C</li>
+					<li>K</li>
+				</ul>
 			</div>
 		</section>
 
 		<main>
 			<div id = "clock">
-				<p id="description">Choose the location</p>
-
-				<div class = "button">
-					<input type = "button" id = "amsterdam" value = "amsterdam">
-					<input type = "button" id = "london" value = "london">
-					<input type = "button" id = "tokyo" value = "tokyo">
-				</div>
+				<p id="description">Amsterdam</p>
 
 				<div id = "label" class = "labelAmsterdam">
 					<div class = "location">
@@ -36,17 +42,12 @@
 					</div>
 				</div>
 
-				<div class = "labelLondon">
-					<div class = "location">
-						<p id = "location"></p>
-					</div>
-					<div class = "time">
-						<p id="time"></p>
-					</div>
-					<div class = "date">
-						<p id="today"></p>
-					</div>
+				<div class = "button">
+					<input type = "button" id = "amsterdam" value = "Amsterdam">
+					<input type = "button" id = "london" value = "London">
+					<input type = "button" id = "tokyo" value = "Tokyo">
 				</div>
+
 
 			</div>
 		</main>	

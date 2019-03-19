@@ -5,57 +5,47 @@ function addLeadingZero(number){
 	return number;
 }
 
-	var locationNames = [
-		"Amsterdam", "London", "Tokyo"
-		];
+var locationNames = [
+	"Amsterdam", "London", "Tokyo"
+	];
+
+var timeZone = 0;
 
 setInterval(updateTime, 1000);
 function updateTime () {
 	var date = new Date();
+	//Time and Date//
 	date.setTime(date.getTime() + timeZone * 60 * 60 * 1000)
-
-	document.getElementById ('time').innerHTML = date.getHours() + ':' + addLeadingZero(date.getMinutes()) + ':' + addLeadingZero(date.getSeconds());
+	document.getElementById ('time').innerHTML = date.getHours() + ':' + addLeadingZero(date.getMinutes()) + ':' + addLeadingZero(date.getSeconds(),{ ease: Bounce.easeOut, y:1000});
 	document.getElementById('today').innerHTML = date.getDate() + '/' + addLeadingZero(date.getMonth() + 1) + '/' + date.getFullYear();
-
 
 };
 
-
-var timeZone = 0;
 
 //--------------Amsterdam-----------------------------
 var buttonAmsterdam = document.getElementById('amsterdam');
 buttonAmsterdam.onclick = function () {
 	timeZone = 0;
 	document.getElementById('description').innerHTML = locationNames[0];
+	document.getElementById('label').className = "labelAmsterdam";
 
 };
-
-// var buttonAmsterdam = document.getElementById('location');
-// buttonAmsterdam.onclick = function (){
-// 	locationDisplay = 0;
-// };
-
 
 //--------------London-----------------------------
 var buttonLondon = document.getElementById('london');
 buttonLondon.onclick = function () {
 	timeZone = -1
 	document.getElementById('description').innerHTML = locationNames[1];
-};
-
-var buttonAmsterdam = document.getElementById('location');
-buttonAmsterdam.onclick = function (){
-	locationDisplay = 1;
+	document.getElementById('label').className = "labelLondon";
 };
 
 
 //--------------Tokyo-----------------------------
-
 var buttonTokyo = document.getElementById('tokyo');
 buttonTokyo.onclick = function () {
 	timeZone = +8
 	document.getElementById('description').innerHTML = locationNames[2];
+	document.getElementById('label').className = "labelTokyo";
 };
 
 

@@ -1,15 +1,109 @@
-h1 {
-	font-size: 50px;
-	text-align: center;
+body {
+	margin: 0;
+	padding: 0;
+	background: #1C2828;
+}
+.contentWrap {
+	width: 100%;
+	margin:  0 auto;
+	padding: 60px 50px;
+	overflow: auto;
+	background: url(../images/nasa-53884-unsplash.jpg) no-repeat fixed;
+				background-size: 100%;
+}
+ul {
+	position: absolute;
+	top: 10%;
+	left: 34%;
+	transform: translate(-20%, -50%);
+	margin:0;
+	padding: 0;
+	display: flex;
+}
+
+ul li {
+	list-style: none;
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size:80px;
+	letter-spacing: 15px;
+	color: #484848;
+	text-shadow: none;
+	animation: animate 1s infinite linear
+}
+@keyframes animate {
+	0% {
+		color : #484848;
+		text-shadow: none;
+	} 18% {
+		color: #484848;
+		text-shadow:none;
+	} 20% /*{
+		color: #FFFFFF;
+		text-shadow:0 0 7px #FFFFFF, 0 0 20px #14E8D2;
+	} 30% {
+		color: #484848;
+		text-shadow:none;
+	} 35% {
+		color: #FFFFFF;
+		text-shadow:0 0 7px #FFFFFF, 0 0 20px #14E8D2;
+	} 70% {
+		color: #484848;
+		text-shadow:none;
+	} 85%*/ {
+		color: #FFFFFF;
+		text-shadow:0 0 7px #FFFFFF, 0 0 20px #14E8D2;
+	} 90% {
+		color: #484848;
+		text-shadow:none;
+	} 100% {
+		color: #484848;
+		text-shadow:none;
+	}
+}
+
+ul li:nth-child(1) {
+	animation-delay: .2s;
+}
+ul li:nth-child(2) {
+	animation-delay: .4s;
+}
+ul li:nth-child(3) {
+	animation-delay: .6s;
+}
+ul li:nth-child(4) {
+	animation-delay: .8s;
+}
+ul li:nth-child(5) {
+	animation-delay: .5s;
+}
+ul li:nth-child(6) {
+	animation-delay: 1.2s;
+}
+ul li:nth-child(7) {
+	animation-delay: .4s;
+}
+ul li:nth-child(8) {
+	animation-delay: 1.4s;
+}
+ul li:nth-child(9) {
+	animation-delay: 1.8s;
+}
+ul li:nth-child(10) {
+	animation-delay: .9s;
 }
 
 #label {
+	font-family: 'ZCOOL XiaoWei', serif;
 	font-size :30px;
 	max-width: 950px;
 	margin:  0 auto;
 	padding-top: -50px;
 	padding: 50px 50px;
 	overflow: auto;
+}
+
+#description{
+	color: 	white;
 }
 
 /*add background for each time zone here!*/
@@ -20,7 +114,7 @@ h1 {
 				color: #FFFBEA;
 }
 
-#lable.labelLondon {
+#label.labelLondon {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255,99,71, 0.6)),
 				url(../images/sabrina-mazzeo-663113-unsplash.jpg) no-repeat fixed;
 				background-size: 100%;
@@ -29,7 +123,7 @@ h1 {
 }
 
 
-#lable.tokyoLable {
+#label.labelTokyo {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255,99,71, 0.6)),
 				url(../images/jezael-melgoza-974061-unsplash.jpg) no-repeat fixed;
 				background-size: 100%;
@@ -46,12 +140,16 @@ h1 {
 }
 
 .button {
-	margin:auto;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
 }
 
 p {
 	font-size: 40px;
 	text-align: center;
+	font-family: 'ZCOOL XiaoWei', serif;
 }
 
 .footerText {
