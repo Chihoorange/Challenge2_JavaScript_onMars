@@ -5,20 +5,35 @@ h1 {
 
 #label {
 	font-size :30px;
-	margin:20px;
+	max-width: 950px;
+	margin:  0 auto;
+	padding-top: -50px;
+	padding: 50px 50px;
+	overflow: auto;
 }
 
 /*add background for each time zone here!*/
-#label.amsterdamLable {
-
+#label.labelAmsterdam {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255,99,71, 0.6)),
+				url(../images/brunel-johnson-661610-unsplash.jpg) no-repeat fixed;
+				background-size: 100%;
+				color: #FFFBEA;
 }
 
-#lable.longonLable {
+#lable.labelLondon {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255,99,71, 0.6)),
+				url(../images/sabrina-mazzeo-663113-unsplash.jpg) no-repeat fixed;
+				background-size: 100%;
+				color: #FFFBEA;
 
 }
 
 
 #lable.tokyoLable {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255,99,71, 0.6)),
+				url(../images/jezael-melgoza-974061-unsplash.jpg) no-repeat fixed;
+				background-size: 100%;
+				color: #FFFBEA;
 
 }
 

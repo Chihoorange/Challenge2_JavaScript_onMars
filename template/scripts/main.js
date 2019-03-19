@@ -5,32 +5,59 @@ function addLeadingZero(number){
 	return number;
 }
 
-//--------------Amsterdam-----------------------------
-var buttonAmsterdam = document.getElementById('amsterdam');
-buttonAmsterdam.onclick = function () {
-	timeZone = 0
-};
-var buttonLondon = document.getElementById('london');
-buttonLondon.onclick = function () {
-	timeZone = -1
-};
 
-var buttonTokyo = document.getElementById('tokyo');
-buttonTokyo.onclick = function () {
-	timeZone = +8
-};
-
-var timeZone = 0
-
-setInterval(updateTimer, 1000);
-function updateTimer () {
+setInterval(updateTime, 1000);
+function updateTime () {
 	var date = new Date();
 	date.setTime(date.getTime() + timeZone * 60 * 60 * 1000)
 
 	document.getElementById ('time').innerHTML = date.getHours() + ':' + addLeadingZero(date.getMinutes()) + ':' + addLeadingZero(date.getSeconds());
 	document.getElementById('today').innerHTML = date.getDate() + '/' + addLeadingZero(date.getMonth() + 1) + '/' + date.getFullYear();
+
+	var locationDisplay = 0;
+	var locationNames = [
+		'Amsterdam', 'London', 'Tokyo'
+		];
+
+	return locationNames = [locationDisplay];
+	document.getElementByID('location').innerHTML = locationDisplay[0];
+
 };
 
+
+var timeZone = 0;
+
+
+//--------------Amsterdam-----------------------------
+var buttonAmsterdam = document.getElementById('amsterdam');
+buttonAmsterdam.onclick = function () {
+	timeZone = 0;
+};
+
+var buttonAmsterdam = document.getElementById('location');
+buttonAmsterdam.onclick = function (){
+	locationDisplay = 0;
+};
+
+
+//--------------London-----------------------------
+var buttonLondon = document.getElementById('london');
+buttonLondon.onclick = function () {
+	timeZone = -1
+};
+
+var buttonAmsterdam = document.getElementById('location');
+buttonAmsterdam.onclick = function (){
+	locationDisplay = 1;
+};
+
+
+//--------------Tokyo-----------------------------
+
+var buttonTokyo = document.getElementById('tokyo');
+buttonTokyo.onclick = function () {
+	timeZone = +8
+};
 
 
 
