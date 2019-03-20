@@ -23,9 +23,7 @@ function updateTime () {
 	}
 
 	document.getElementById ('time').innerHTML = addLeadingZero(date.getHours()) + animation + addLeadingZero(date.getMinutes()) + animation + addLeadingZero(date.getSeconds());
-
 };
-
 
 //--------------Amsterdam-----------------------------
 var buttonAmsterdam = document.getElementById('amsterdam');
