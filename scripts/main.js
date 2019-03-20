@@ -22,7 +22,7 @@ function updateTime () {
 		animation = ' ';
 	}
 
-	document.getElementById ('time').innerHTML = date.getHours() + animation + addLeadingZero(date.getMinutes()) + animation + addLeadingZero(date.getSeconds());
+	document.getElementById ('time').innerHTML = addLeadingZero(date.getHours()) + animation + addLeadingZero(date.getMinutes()) + animation + addLeadingZero(date.getSeconds());
 
 };
 
